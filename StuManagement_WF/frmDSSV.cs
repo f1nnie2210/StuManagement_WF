@@ -20,7 +20,7 @@ namespace StuManagement_WF
         private void frmDSSV_Load(object sender, EventArgs e)
         {
             //load all sinh viên khi form load
-            dgvSinhVien.DataSource = new Database().SelectData("exec SelectAllSinhVien", null);
+            dgvSinhVien.DataSource = new Database().SelectData("exec SelectAllSinhVien");
 
             //đặt tên cột
             dgvSinhVien.Columns["masinhvien"].HeaderText = "Mã SV";

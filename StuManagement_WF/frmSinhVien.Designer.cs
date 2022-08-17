@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.rbtNam = new System.Windows.Forms.RadioButton();
-            this.tbtNu = new System.Windows.Forms.RadioButton();
+            this.rbtNu = new System.Windows.Forms.RadioButton();
             this.txtQuequan = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtDiachi = new System.Windows.Forms.TextBox();
@@ -129,15 +129,15 @@
             this.rbtNam.Text = "Nam";
             this.rbtNam.UseVisualStyleBackColor = true;
             // 
-            // tbtNu
+            // rbtNu
             // 
-            this.tbtNu.AutoSize = true;
-            this.tbtNu.Location = new System.Drawing.Point(272, 149);
-            this.tbtNu.Name = "tbtNu";
-            this.tbtNu.Size = new System.Drawing.Size(45, 20);
-            this.tbtNu.TabIndex = 10;
-            this.tbtNu.Text = "Nữ";
-            this.tbtNu.UseVisualStyleBackColor = true;
+            this.rbtNu.AutoSize = true;
+            this.rbtNu.Location = new System.Drawing.Point(272, 149);
+            this.rbtNu.Name = "rbtNu";
+            this.rbtNu.Size = new System.Drawing.Size(45, 20);
+            this.rbtNu.TabIndex = 10;
+            this.rbtNu.Text = "Nữ";
+            this.rbtNu.UseVisualStyleBackColor = true;
             // 
             // txtQuequan
             // 
@@ -246,7 +246,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtQuequan);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tbtNu);
+            this.Controls.Add(this.rbtNu);
             this.Controls.Add(this.rbtNam);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -276,7 +276,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton rbtNam;
-        private System.Windows.Forms.RadioButton tbtNu;
+        private System.Windows.Forms.RadioButton rbtNu;
         private System.Windows.Forms.TextBox txtQuequan;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtDiachi;

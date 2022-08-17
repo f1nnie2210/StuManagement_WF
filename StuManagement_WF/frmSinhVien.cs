@@ -27,6 +27,30 @@ namespace StuManagement_WF
             else
             {
                 this.Text = "Cập nhật thông tin sinh viên";
+                //Get info 1 sv dựa vào msv
+                //msv được truyền từ form dssv
+                var r = new Database().Select("selectSV '"+msv+"'");
+                //MessageBox.Show(r[0].ToString());//load thành công
+                //set các giá trị vào component của form
+
+                txtHo.Text = r["ho"].ToString();
+                txtTendem.Text = r["tendem"].ToString();
+                txtTen.Text = r["ten"].ToString();
+                mtbNgaysinh.Text = r["ngaysinh"].ToString();
+                if (int.Parse(r["gioitinh"].ToString()) == 1)
+                {
+                    rbtNam.Checked = true;
+                }
+                else
+                {
+                    rbtNu.Checked = true;
+                }
+
+                txtQuequan.Text = r["quequan"].ToString();
+                txtDiachi.Text = r["diachi"].ToString();
+                txtDienthoai.Text = r["dienthoai"].ToString();
+                txtEmail.Text = r["email"].ToString();
+
             }
         }
     }
