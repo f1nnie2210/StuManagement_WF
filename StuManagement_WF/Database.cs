@@ -71,13 +71,19 @@ namespace StuManagement_WF
             }
         }
 
-        public int ExeCute(string sql)
+        public int ExeCute(string sql, List<CustomParameter> lstPara)
         {
             try
             {
                 conn.Open();//mở kết nối
-                cmd = new SqlCommand(sql, conn);//thực thi câu lệnh sql
-                return (int)cmd.ExecuteScalar();//trả về kết quả
+                cmd = new SqlCommand(sql, conn);//truyền giá trị vào cmd
+                cmd.CommandType = CommandType.StoredProcedure;
+                foreach (var p in lstPara)//gán các tham số cho cmd
+                {
+                    cmd.Parameters.AddWithValue(p.key, p.value);
+                }
+                var rs = cmd.ExecuteNonQuery();//lấy kết quả thực thi truy vấn
+                return (int)rs;//trả kết quả
             }
             catch (Exception ex)
             {

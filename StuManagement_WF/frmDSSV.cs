@@ -19,6 +19,11 @@ namespace StuManagement_WF
 
         private void frmDSSV_Load(object sender, EventArgs e)
         {
+            LoadDSSV();//gọi hàm LoadDSSV() khi form load
+        }
+
+        private void LoadDSSV()
+        {
             //load all sinh viên khi form load
             dgvSinhVien.DataSource = new Database().SelectData("exec SelectAllSinhVien");
 
@@ -42,12 +47,16 @@ namespace StuManagement_WF
                 var msv = dgvSinhVien.Rows[e.RowIndex].Cells["masinhvien"].Value.ToString();
                 //truyền mã sv vào form sinh viên
                 new frmSinhVien(msv).ShowDialog();
+
+                //Load lại DSSV khi frmSinhVien được đóng
+                LoadDSSV();
             }
         }
 
         private void btnThemmoi_Click(object sender, EventArgs e)
         {
             new frmSinhVien(null).ShowDialog(); //thêm mới => msv = null
+            LoadDSSV();//load lại DSSV khi thêm thành công - form sv được đóng
         }
     }
 }
