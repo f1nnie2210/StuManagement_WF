@@ -57,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(636, 37);
+            this.label1.Location = new System.Drawing.Point(636, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 1;
@@ -65,14 +65,14 @@
             // 
             // txtTukhoa
             // 
-            this.txtTukhoa.Location = new System.Drawing.Point(698, 34);
+            this.txtTukhoa.Location = new System.Drawing.Point(698, 31);
             this.txtTukhoa.Name = "txtTukhoa";
             this.txtTukhoa.Size = new System.Drawing.Size(269, 22);
             this.txtTukhoa.TabIndex = 2;
             // 
             // btnTimkiem
             // 
-            this.btnTimkiem.Location = new System.Drawing.Point(973, 31);
+            this.btnTimkiem.Location = new System.Drawing.Point(973, 28);
             this.btnTimkiem.Name = "btnTimkiem";
             this.btnTimkiem.Size = new System.Drawing.Size(87, 28);
             this.btnTimkiem.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             // btnThemmoi
             // 
-            this.btnThemmoi.Location = new System.Drawing.Point(1066, 31);
+            this.btnThemmoi.Location = new System.Drawing.Point(1066, 28);
             this.btnThemmoi.Name = "btnThemmoi";
             this.btnThemmoi.Size = new System.Drawing.Size(87, 28);
             this.btnThemmoi.TabIndex = 3;

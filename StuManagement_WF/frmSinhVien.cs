@@ -70,10 +70,10 @@ namespace StuManagement_WF
             {
                 ngaysinh = DateTime.ParseExact(mtbNgaysinh.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
             }
-            catch (Exception)
+            catch
             {
 
-                MessageBox.Show("Input is not valid");
+                MessageBox.Show("Input is invalid");
                 mtbNgaysinh.Select();//trỏ chuột về mtbNgaysinh
                 return; //không thực hiện hàm phía dưới
             }
@@ -155,11 +155,11 @@ namespace StuManagement_WF
             {
                 if(string.IsNullOrEmpty(msv))//thêm mới
                 {
-                    MessageBox.Show("Succesfully added students");
+                    MessageBox.Show("Succesfully added student");
                 }    
                 else//cập nhật
                 {
-                    MessageBox.Show("Successfully updated students");
+                    MessageBox.Show("Successfully updated student");
                 }
                 this.Dispose();//đóng form sau khi thực hiện
             }
