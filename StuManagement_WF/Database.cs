@@ -29,12 +29,17 @@ namespace StuManagement_WF
             }
         }
 
-        public DataTable SelectData(string sql)
+        public DataTable SelectData(string sql, List<CustomParameter> lstPara)
         {
             try
             {
                 conn.Open();//mở kết nối
                 cmd = new SqlCommand(sql, conn);//truyền giá trị vào cmd
+                cmd.CommandType = CommandType.StoredProcedure;//set command type cho cmd
+                foreach (var para in lstPara)//gán các tham số cho cmd
+                {
+                    cmd.Parameters.AddWithValue(para.key, para.value);
+                }
                 dt = new DataTable();
                 dt.Load(cmd.ExecuteReader());//thực thi câu lệnh
                 return dt;//trả về kết quả

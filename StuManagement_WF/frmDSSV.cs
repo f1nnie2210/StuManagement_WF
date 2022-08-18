@@ -17,6 +17,7 @@ namespace StuManagement_WF
             InitializeComponent();
         }
 
+        private string tukhoa = "";
         private void frmDSSV_Load(object sender, EventArgs e)
         {
             LoadDSSV();//gọi hàm LoadDSSV() khi form load
@@ -25,7 +26,16 @@ namespace StuManagement_WF
         private void LoadDSSV()
         {
             //load all sinh viên khi form load
-            dgvSinhVien.DataSource = new Database().SelectData("exec SelectAllSinhVien");
+
+            //khai báo list customparameter
+            List<CustomParameter> lstPara = new List<CustomParameter>();
+            lstPara.Add(new CustomParameter()
+            {
+                key = "@tukhoa",
+                value = tukhoa
+            });
+
+            dgvSinhVien.DataSource = new Database().SelectData("SelectAllSinhVien", lstPara);
 
             //đặt tên cột
             dgvSinhVien.Columns["masinhvien"].HeaderText = "Mã SV";
@@ -57,6 +67,12 @@ namespace StuManagement_WF
         {
             new frmSinhVien(null).ShowDialog(); //thêm mới => msv = null
             LoadDSSV();//load lại DSSV khi thêm thành công - form sv được đóng
+        }
+
+        private void btnTimkiem_Click(object sender, EventArgs e)
+        {
+            tukhoa = txtTukhoa.Text;
+            LoadDSSV();
         }
     }
 }

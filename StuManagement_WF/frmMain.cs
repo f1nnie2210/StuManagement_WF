@@ -20,7 +20,7 @@ namespace StuManagement_WF
         private void frmMain_Load(object sender, EventArgs e)
         {
             var db = new Database();
-            dgvData.DataSource = db.SelectData(null);
+            //dgvData.DataSource = db.SelectData(null);
         }
     }
 }
