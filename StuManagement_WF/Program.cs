@@ -16,7 +16,7 @@ namespace StuManagement_WF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDSGV());//chạy form đầu tiên
+            Application.Run(new frmDSMH());//chạy form đầu tiên
         }
     }
 }

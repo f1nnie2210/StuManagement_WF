@@ -54,6 +54,12 @@
     <Compile Include="frmDSGV.Designer.cs">
       <DependentUpon>frmDSGV.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDSMH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDSMH.Designer.cs">
+      <DependentUpon>frmDSMH.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDSSV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonHoc.Designer.cs">
+      <DependentUpon>frmMonHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,9 @@
     <EmbeddedResource Include="frmDSGV.resx">
       <DependentUpon>frmDSGV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDSMH.resx">
+      <DependentUpon>frmDSMH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDSSV.resx">
       <DependentUpon>frmDSSV.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonHoc.resx">
+      <DependentUpon>frmMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSinhVien.resx">
       <DependentUpon>frmSinhVien.cs</DependentUpon>
