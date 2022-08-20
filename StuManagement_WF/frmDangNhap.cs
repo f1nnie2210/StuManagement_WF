@@ -50,7 +50,7 @@ namespace StuManagement_WF
             #endregion
 
             tendangnhap = txtTenDangNhap.Text;
-            string loaitk = "";
+            loaitk = "";
 
             #region swtk
             switch (cbbLoaiTaiKhoan.Text)

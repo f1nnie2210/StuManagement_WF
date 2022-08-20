@@ -37,8 +37,9 @@
             this.monHocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giaoVienToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.lopHocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.troGiupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dangKyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.chamDiemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,10 +49,11 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.heThongToolStripMenuItem,
             this.quanLyToolStripMenuItem,
-            this.troGiupToolStripMenuItem});
+            this.dangKyToolStripMenuItem,
+            this.chamDiemToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1181, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1181, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,7 +63,7 @@
             this.doiMatKhauToolStripMenuItem,
             this.thoatToolStripMenuItem});
             this.heThongToolStripMenuItem.Name = "heThongToolStripMenuItem";
-            this.heThongToolStripMenuItem.Size = new System.Drawing.Size(85, 26);
+            this.heThongToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
             this.heThongToolStripMenuItem.Text = "Hệ thống";
             // 
             // doiMatKhauToolStripMenuItem
@@ -85,7 +87,7 @@
             this.giaoVienToolStripMenuItem1,
             this.lopHocToolStripMenuItem});
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
-            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
+            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.quanLyToolStripMenuItem.Text = "Quản lý";
             // 
             // sinhVienToolStripMenuItem
@@ -116,20 +118,26 @@
             this.lopHocToolStripMenuItem.Text = "Lớp học";
             this.lopHocToolStripMenuItem.Click += new System.EventHandler(this.lopHocToolStripMenuItem_Click);
             // 
-            // troGiupToolStripMenuItem
+            // dangKyToolStripMenuItem
             // 
-            this.troGiupToolStripMenuItem.Name = "troGiupToolStripMenuItem";
-            this.troGiupToolStripMenuItem.Size = new System.Drawing.Size(78, 26);
-            this.troGiupToolStripMenuItem.Text = "Trợ giúp";
+            this.dangKyToolStripMenuItem.Name = "dangKyToolStripMenuItem";
+            this.dangKyToolStripMenuItem.Size = new System.Drawing.Size(139, 24);
+            this.dangKyToolStripMenuItem.Text = "Đăng ký môn học";
             // 
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.Color.White;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(0, 30);
+            this.pnlContent.Location = new System.Drawing.Point(0, 28);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1181, 552);
+            this.pnlContent.Size = new System.Drawing.Size(1181, 554);
             this.pnlContent.TabIndex = 1;
+            // 
+            // chamDiemToolStripMenuItem
+            // 
+            this.chamDiemToolStripMenuItem.Name = "chamDiemToolStripMenuItem";
+            this.chamDiemToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
+            this.chamDiemToolStripMenuItem.Text = "Chấm điểm";
             // 
             // frmMain
             // 
@@ -161,8 +169,9 @@
         private System.Windows.Forms.ToolStripMenuItem monHocToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem giaoVienToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem lopHocToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem troGiupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dangKyToolStripMenuItem;
         private System.Windows.Forms.Panel pnlContent;
+        private System.Windows.Forms.ToolStripMenuItem chamDiemToolStripMenuItem;
     }
 }
 

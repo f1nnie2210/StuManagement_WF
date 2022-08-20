@@ -17,14 +17,34 @@ namespace StuManagement_WF
             InitializeComponent();
         }
 
+        private string taikhoan;
+        private string loaitk;
         private void frmMain_Load(object sender, EventArgs e)
         {
             var fn = new frmDangNhap();
             fn.ShowDialog();//load form đăng nhập khi frm main được gọi
 
             //sau khi form đăng nhập được tắt, lấy tài khoản đã đăng nhập
-            var tk = fn.tendangnhap;
-            MessageBox.Show("Logged by: " + tk);
+            taikhoan = fn.tendangnhap;
+            loaitk = fn.loaitk;
+            if (loaitk.Equals("admin"))//quyền admin
+            {
+                chamDiemToolStripMenuItem.Visible = false;
+                dangKyToolStripMenuItem.Visible = false;
+            }
+            else
+            { 
+                quanLyToolStripMenuItem.Visible = false;
+                if (loaitk.Equals("gv"))
+                {
+                    dangKyToolStripMenuItem.Visible = false;
+                }
+                else
+                {
+                    chamDiemToolStripMenuItem.Visible = false;
+                }
+            }
+
 
             frmWelcome f = new frmWelcome();
             AddForm(f);
