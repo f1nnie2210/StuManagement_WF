@@ -19,6 +19,13 @@ namespace StuManagement_WF
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            var fn = new frmDangNhap();
+            fn.ShowDialog();//load form đăng nhập khi frm main được gọi
+
+            //sau khi form đăng nhập được tắt, lấy tài khoản đã đăng nhập
+            var tk = fn.tendangnhap;
+            MessageBox.Show("Logged by: " + tk);
+
             frmWelcome f = new frmWelcome();
             AddForm(f);
         }
