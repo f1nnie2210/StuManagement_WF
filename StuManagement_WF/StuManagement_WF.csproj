@@ -60,6 +60,12 @@
     <Compile Include="frmDSGV.Designer.cs">
       <DependentUpon>frmDSGV.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDSLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDSLopHoc.Designer.cs">
+      <DependentUpon>frmDSLopHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDSMH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,12 @@
     </Compile>
     <Compile Include="frmGV.Designer.cs">
       <DependentUpon>frmGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLopHoc.Designer.cs">
+      <DependentUpon>frmLopHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -110,6 +122,9 @@
     <EmbeddedResource Include="frmDSGV.resx">
       <DependentUpon>frmDSGV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDSLopHoc.resx">
+      <DependentUpon>frmDSLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDSMH.resx">
       <DependentUpon>frmDSMH.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGV.resx">
       <DependentUpon>frmGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLopHoc.resx">
+      <DependentUpon>frmLopHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

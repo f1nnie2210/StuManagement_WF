@@ -57,9 +57,9 @@ namespace StuManagement_WF
             AddForm(f);
         }
 
-        private void diemThiToolStripMenuItem_Click(object sender, EventArgs e)
+        private void lopHocToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmDSDiemThi f = new frmDSDiemThi();
+            frmDSLopHoc f = new frmDSLopHoc();
             AddForm(f);
         }
     }
