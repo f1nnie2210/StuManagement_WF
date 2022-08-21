@@ -30,14 +30,14 @@ namespace StuManagement_WF
             if (loaitk.Equals("admin"))//quyền admin
             {
                 chamDiemToolStripMenuItem.Visible = false;
-                dangKyToolStripMenuItem.Visible = false;
+                chucChucToolStripMenuItem.Visible = false;
             }
             else
             { 
                 quanLyToolStripMenuItem.Visible = false;
                 if (loaitk.Equals("gv"))
                 {
-                    dangKyToolStripMenuItem.Visible = false;
+                    chucChucToolStripMenuItem.Visible = false;
 
 
 
@@ -100,6 +100,12 @@ namespace StuManagement_WF
         private void dangKyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var f = new frmDsMHDaDky(taikhoan);
+            AddForm(f);
+        }
+
+        private void traCuuDiemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmKetQuaHocTap(taikhoan);//truyền tk đăng nhập = msv
             AddForm(f);
         }
     }
