@@ -89,7 +89,6 @@ namespace StuManagement_WF
             var rs = new Database().SelectData("dangnhap", lst);
             if (rs.Rows.Count > 0)
             {
-                MessageBox.Show("Logged in successfully");
                 this.Hide();
             }
             else

@@ -92,7 +92,7 @@
             this.txtMatKhau.Location = new System.Drawing.Point(179, 136);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(183, 22);
-            this.txtMatKhau.TabIndex = 5;
+            this.txtMatKhau.TabIndex = 3;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // btnDangNhap
@@ -100,7 +100,7 @@
             this.btnDangNhap.Location = new System.Drawing.Point(100, 194);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(96, 28);
-            this.btnDangNhap.TabIndex = 6;
+            this.btnDangNhap.TabIndex = 4;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
@@ -110,7 +110,7 @@
             this.btnThoat.Location = new System.Drawing.Point(221, 194);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(96, 28);
-            this.btnThoat.TabIndex = 7;
+            this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
