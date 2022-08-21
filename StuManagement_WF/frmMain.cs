@@ -38,10 +38,17 @@ namespace StuManagement_WF
                 if (loaitk.Equals("gv"))
                 {
                     dangKyToolStripMenuItem.Visible = false;
+
+
+
+
+
                 }
                 else
                 {
                     chamDiemToolStripMenuItem.Visible = false;
+
+
                 }
             }
 
@@ -87,6 +94,12 @@ namespace StuManagement_WF
         private void lopHocToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDSLopHoc f = new frmDSLopHoc();
+            AddForm(f);
+        }
+
+        private void dangKyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmDsMHDaDky(taikhoan);
             AddForm(f);
         }
     }
