@@ -59,5 +59,15 @@ namespace StuManagement_WF.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Background_QLSV {
+            get {
+                object obj = ResourceManager.GetObject("Background_QLSV", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

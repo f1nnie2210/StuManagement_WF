@@ -137,12 +137,10 @@ namespace StuManagement_WF
                 if(string.IsNullOrEmpty(mgv))
                 {
                     MessageBox.Show("Succesfully added teacher");
-
                 }
                 else
                 {
                     MessageBox.Show("Successfully updated teacher");
-
                 }
                 this.Dispose();
             }

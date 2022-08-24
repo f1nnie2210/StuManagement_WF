@@ -47,7 +47,7 @@ namespace StuManagement_WF
                 MessageBox.Show("Please enter your password");
                 return;
             }
-            #endregion
+            #endregion swtk
 
             tendangnhap = txtTenDangNhap.Text;
             loaitk = "";

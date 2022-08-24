@@ -29,15 +29,15 @@ namespace StuManagement_WF
             loaitk = fn.loaitk;
             if (loaitk.Equals("admin"))//quyền admin
             {
-                chamDiemToolStripMenuItem.Visible = false;
-                chucChucToolStripMenuItem.Visible = false;
+                quanLyLopToolStripMenuItem.Visible = false;
+                chucNangToolStripMenuItem.Visible = false;
             }
             else
             { 
                 quanLyToolStripMenuItem.Visible = false;
                 if (loaitk.Equals("gv"))
                 {
-                    chucChucToolStripMenuItem.Visible = false;
+                    chucNangToolStripMenuItem.Visible = false;
 
 
 
@@ -46,7 +46,7 @@ namespace StuManagement_WF
                 }
                 else
                 {
-                    chamDiemToolStripMenuItem.Visible = false;
+                    quanLyLopToolStripMenuItem.Visible = false;
 
 
                 }
@@ -64,6 +64,7 @@ namespace StuManagement_WF
             f.AutoScroll = true;
             f.FormBorderStyle = FormBorderStyle.None;
             f.Dock = DockStyle.Fill;
+            this.Text = f.Text;
             this.pnlContent.Controls.Add(f);
             f.Show();
         }
@@ -106,6 +107,12 @@ namespace StuManagement_WF
         private void traCuuDiemToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var f = new frmKetQuaHocTap(taikhoan);//truyền tk đăng nhập = msv
+            AddForm(f);
+        }
+
+        private void quanLyLopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new frmQuanLyLop(taikhoan);//truyền tk đăng nhập = mgv
             AddForm(f);
         }
     }
