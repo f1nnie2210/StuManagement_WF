@@ -53,6 +53,7 @@
             this.dgvDSLop.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSLop.Size = new System.Drawing.Size(1163, 454);
             this.dgvDSLop.TabIndex = 10;
+            this.dgvDSLop.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSLop_CellDoubleClick);
             // 
             // btnTraCuu
             // 

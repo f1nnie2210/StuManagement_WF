@@ -50,5 +50,23 @@ namespace StuManagement_WF
         {
             LoadDSLop();//gọi lại hàm  LoadDSLop(); khi btn tra cứu được click
         }
+
+        private void dgvDSLop_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //khi double click vào 1 dòng trên datagridview dgvDSLop sẽ show ra form bao gồm các sinh viên thuộc lớp học tương ứng
+            //từ đó giáo viên có thể tiến hành chấm điểm cho sinh viên
+
+            //như thiết kế csdl, dữ liệu truyền vào cần có mã lớp học -> truyền mã lớp được chọn từ frmQuanLyLop qua frmChamDiem
+            //mã sinh viên sẽ được lấy trong frmChamDiem
+
+            if (dgvDSLop.Rows[e.RowIndex].Index >= 0)// chỉ số hàng của datagridview được tính bắt đầu từ 0
+            {
+                new frmChamDiem(
+                        dgvDSLop.Rows[e.RowIndex].Cells["malophoc"].Value.ToString(),//mã lớp học
+                        mgv//mã giáo viên                    
+                    ).ShowDialog();
+                LoadDSLop();// loadDSLop khi đóng frmChamDiem
+            }
+        }
     }
 }

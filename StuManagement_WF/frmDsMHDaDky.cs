@@ -23,6 +23,13 @@ namespace StuManagement_WF
         private void frmDsMHDaDky_Load(object sender, EventArgs e)
         {
             loadMonDky();
+            dgvDSMHDky.Columns["malophoc"].HeaderText = "Mã lớp";
+            dgvDSMHDky.Columns["tenmonhoc"].HeaderText = "Tên học phần";
+            dgvDSMHDky.Columns["gvien"].HeaderText = "Giảng viên";
+            dgvDSMHDky.Columns["sotinchi"].HeaderText = "Số tín chỉ";
+            dgvDSMHDky.Columns["diemlan1"].HeaderText = "Điểm lần 1";
+            dgvDSMHDky.Columns["diemlan2"].HeaderText = "Điểm lần 2";
+
         }
 
         private void loadMonDky()

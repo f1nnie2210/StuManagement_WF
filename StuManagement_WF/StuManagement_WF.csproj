@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="CustomParameter.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="frmChamDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChamDiem.Designer.cs">
+      <DependentUpon>frmChamDiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangKyMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmChamDiem.resx">
+      <DependentUpon>frmChamDiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangKyMonHoc.resx">
       <DependentUpon>frmDangKyMonHoc.cs</DependentUpon>
     </EmbeddedResource>

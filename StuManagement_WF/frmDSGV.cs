@@ -40,6 +40,12 @@ namespace StuManagement_WF
         private void frmDSGV_Load(object sender, EventArgs e)
         {
             loadDSGV();
+            dgvDSGV.Columns["magiaovien"].HeaderText = "Mã giáo viên";
+            dgvDSGV.Columns["hoten"].HeaderText = "Họ tên";
+            dgvDSGV.Columns["gioitinh"].HeaderText = "Giới tính";
+            dgvDSGV.Columns["dienthoai"].HeaderText = "Điện thoại";
+            dgvDSGV.Columns["email"].HeaderText = "Email";
+            dgvDSGV.Columns["diachi"].HeaderText = "Địa chỉ";
         }
 
         private void btnThemMoi_Click(object sender, EventArgs e)

@@ -115,5 +115,12 @@ namespace StuManagement_WF
             var f = new frmQuanLyLop(taikhoan);//truyền tk đăng nhập = mgv
             AddForm(f);
         }
+
+        private void dangXuatToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMain fm = new frmMain();
+            fm.Show();
+        }
     }
 }
